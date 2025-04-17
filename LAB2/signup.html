@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>회원가입</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <h1>Welcome to <span style="font-weight:bold;">INTERNET-PROGRAMMING MOVIE SITE</span></h1>
+
+  <div style="text-align:center;">
+    <a href="login.html">로그인</a> | <strong>회원가입</strong>
+  </div>
+
+  <form action="#" method="post" style="border: 2px solid black; padding: 20px; width: 350px; margin: auto;">
+    <div class="form-row">
+        <label for="name">이름:</label>
+        <input type="text" id="name" name="name" placeholder="이름 입력" required>
+      </div>
+
+    <div class="form-row">
+        <label for="birth">생일:</label>
+        <input type="date" name="birth" step="1">
+    </div>
+    <div class="form-row gender">
+        <label>성별:</label>
+        <div class="radio-group">
+          <label><input type="radio" name="gender" value="male" required> 남성</label>
+          <label><input type="radio" name="gender" value="female"> 여성</label>
+        </div>
+      </div>
+    <div class="form-row">
+        <label for="grade">학년:</label> 
+        <input type="number" name="grade" step="1" min="1" max="4">
+    </div>
+    <div class="form-row">
+        <label for="userid">아이디:</label> 
+        <input type="text" name="userid" autofocus>
+    </div>
+    <div class="form-row">
+        <label for="password">비밀번호:</label> 
+        <input type="password" name="password" autocomplete="new-password">
+    </div>
+    <div class="form-row">
+        <label for="email">이메일:</label> 
+        <input type="email" name="email"><br><br></label><br>
+    </div>
+    <div class="form-row">
+        <label for="question">보안질문:</label>
+        <select name="question" required>
+        <option value="">질문을 선택하세요</option>
+        <option value="q1">가장 좋아하는 영화는?</option>
+        <option value="q2">어릴 적 별명은?</option>
+        <option value="q3">가장 좋아하는 음식은?</option>
+        </select><br><br>
+        </label><br>
+    </div>
+    <div class="form-row">
+        <label for="answer">답변:</label>
+        <input type="text" name="answer"><br><br></label><br>
+    </div>
+    <!-- 버튼 -->
+    <button type="submit" style="background-color: green; color: white;">Signup</button>
+    <button type="reset" style="background-color: red; color: white;">Cancel</button>
+  </form>
+</body>
+</html>
